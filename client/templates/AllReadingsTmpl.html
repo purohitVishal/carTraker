@@ -1,0 +1,51 @@
+<div class="mainContainer">
+<h1>Following table represents the list of readings received</h1>
+
+
+<table class="table table-bordered" >
+    <thead>
+    <tr>
+        <th rowspan="2">vin</th>
+        <th rowspan="2">latitude</th>
+        <th rowspan="2">longitude</th>
+        <th rowspan="2">timestamp</th>
+        <th rowspan="2">fuelVolume</th>
+        <th rowspan="2">speed</th>
+        <th rowspan="2">engineHp</th>
+        <th rowspan="2">checkEngineLightOn</th>
+        <th rowspan="2">engineCoolantLow</th>
+        <th rowspan="2">cruiseControlOn</th>
+        <th rowspan="2">engineRpm</th>
+        <th colspan="4">tyres</th>
+
+
+    </tr>
+    <tr>
+        <th>frontLeft</th>
+        <th>frontRight</th>
+        <th>rearLeft</th>
+        <th>rearRight</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat = "x in readingObj" >
+        <td>{{x.vin}}</td>
+        <td>{{x.latitude}}</td>
+        <td>{{x.longitude}}</td>
+        <td>{{x.timestamp}}</td>
+        <td>{{x.fuelVolume}}</td>
+        <td>{{x.speed}}</td>
+        <td>{{x.engineHp}}</td>
+        <td>{{x.checkEngineLightOn}}</td>
+        <td>{{x.engineCoolantLow}}</td>
+        <td>{{x.cruiseControlOn}}</td>
+        <td>{{x.engineRpm}}</td>
+        <td>{{x.tires.frontLeft}}</td>
+        <td>{{x.tires.frontRight}}</td>
+        <td>{{x.tires.rearLeft}}</td>
+        <td>{{x.tires.rearRight}}</td>
+
+    </tr>
+    </tbody>
+</table>
+</div>

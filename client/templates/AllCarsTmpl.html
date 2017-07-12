@@ -1,0 +1,29 @@
+<div class="mainContainer">
+<h1>This page represents all the cars that are present in database with complete details</h1>
+
+<table class="table table-bordered" >
+    <thead>
+    <tr>
+        <th>vin</th>
+        <th>model</th>
+        <th>make</th>
+        <th>year</th>
+        <th>red line Rpm</th>
+        <th>max Fuel Volume</th>
+        <th>last Service Date</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat = "x in newObj" >
+        <td>{{x.vin}}</td>
+        <td>{{x.model}}</td>
+        <td>{{x.make}}</td>
+        <td>{{x.year}}</td>
+        <td>{{x.redlineRpm}}</td>
+        <td>{{x.maxFuelVolume}}</td>
+        <td>{{x.lastServiceDate}}</td>
+
+    </tr>
+    </tbody>
+</table>
+    </div>

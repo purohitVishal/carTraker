@@ -1,0 +1,35 @@
+<div class="mainContainerSSD">
+    <div id="lableOfTime" ><label>Time duration</label></div>
+    <div class="lableOfVinProperty"><label>Select Vin from list</label></div> <div class="lableOfVinProperty"><label>Select Specific Signal</label></div>
+<div id="ssDetail1">
+    <select ng-model="vinNameSelected" ng-options="item.vin for item in alertObj"></select>
+
+    <select ng-model="signalSelected" ng-options="item for item in signalNames"></select>
+</div>
+
+        <div id="ssDetail2">
+
+    <label class="textColor">Hr</label> <input type="number" ng-model="timeHr"/>
+    <label class="textColor">Min</label> <input type="number" ng-model="timeMin"/>
+
+    <button ng-click="submitbtn()" class="btn btn-primary" id="btnSSD">submit</button>
+        </div>
+
+<div class="tableContainerSSd" >
+    <table>
+        <thead>
+        <tr>
+            <td>{{vinNameSelected.vin}}</td>
+        </tr>
+            <tr>
+                <td>{{signalSelected}}</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat = "x in selectedObject track by $index">
+                <td>{{x}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>

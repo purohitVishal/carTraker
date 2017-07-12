@@ -1,0 +1,89 @@
+
+.mainContainer{
+    margin:auto;
+    width:90%;
+    color: #F3F8FC;
+}
+
+#btn{
+    margin:10px;
+}
+.homeContainer{
+    padding:70px;
+    width:500px;
+    font-family: helvetica;
+    font-size: large;
+}
+
+#map-canvas{
+    height:400px;
+    width:600px;
+
+}
+.navbar{
+    background-color: inherit;
+
+}
+
+body{
+    margin:0;
+    font-family:sans-serif;
+}
+
+
+body{
+    background:linear-gradient(rgba(49, 88, 201, 0.7), rgba(49, 88, 201, 0.7)), url('car-on-map.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#ssDetail2,#ssDetail1{
+    float:left ;
+    margin:10px;
+
+}
+#ssDetail1{
+    margin-top:16px;
+
+
+}
+
+.mainContainerSSD{
+    margin:auto;
+    width: 70%;
+}
+.tableContainerSSd{
+margin-left:10px;
+    float:left;
+    color: #F3F8FC;
+}
+#lableOfTime{
+    float: right;
+    margin-right:450px;
+    color: #F3F8FC;
+    font-size: large;
+}
+.textColor{
+    color: #F3F8FC;
+
+}
+select option{
+    color:black
+}
+select{
+    padding:3px;
+    color:black;
+}
+.selectBox{
+    color:black;
+    margin-bottom: 5px;
+}
+.lableOfVinProperty{
+    float:left;
+    color:white;
+    margin-left: 17px;
+    font-size: large;
+}
+#btnSSD{
+    margin:0px 60px 0px 20px;
+}
