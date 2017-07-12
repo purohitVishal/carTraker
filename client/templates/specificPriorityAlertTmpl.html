@@ -1,13 +1,15 @@
-<div class="mainContainer">
-    <h1>This page describes number of HIGH alerts within last 2 hours for all the vehicles and is sorted accordingly, based on the readings received.</h1>
+
+<div>
+    <h1>This page describes all Historical alerts that are being raised by the readings received for a particular VIN</h1>
 
 
-
-    <button ng-click="submitBtn('/specific-signal-detail')" class="btn btn-primary">Specific Signal Details</button>
+    <label>Select Vin to View Alerts </label>
+    <div class="selectBox"><select ng-model="alertOfVin" ng-options="item.vin for item in allAlertObj" ng-click="selectboxClick()"></select></div>
+    <button ng-click="submitBtn()" class="btn btn-primary">Submit</button>
     <div>
         <br>
     </div>
-
+    <div id="tbl">
     <table class="table table-bordered" >
         <thead>
         <tr>
@@ -25,7 +27,7 @@
             <th colspan="4">tyres</th>
             <th rowspan="2">priority</th>
             <th rowspan="2">description</th>
-            <th rowspan="2">count of high alert</th>
+
 
         </tr>
         <tr>
@@ -36,7 +38,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr ng-repeat = "x in alertObj | filter:'high' | orderBy:'count'" >
+        <tr ng-repeat = "x in alertObj track by $index"   >
             <td>{{x.vin}}</td>
             <td>{{x.latitude}}</td>
             <td>{{x.longitude}}</td>
@@ -60,3 +62,4 @@
         </tbody>
     </table>
 </div>
+    </div>

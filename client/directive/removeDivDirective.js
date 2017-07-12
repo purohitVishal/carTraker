@@ -4,7 +4,7 @@ function removeDivDirective() {
     return {
         scope: true,
         controller: "alertController",
-        templateUrl: 'templates/demo.html',
+        templateUrl: 'templates/specificPriorityAlertTmpl.html',
         replace: true,
         link: function (scope, element, attrs, alertController) {
             console.log("fffrom directive");
