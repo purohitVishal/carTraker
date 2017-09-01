@@ -1,5 +1,7 @@
-# car-tracker-seed
-seed for the Full-Stack IOT training project: car-tracker
+car tracker
+
+Locate, manage, measure with most advanced vehicle tracking app, it indicates fuel quantity, tyre pressure in all tyres and raises various alerts for your safety 
+
 
 ## directory structure:
 
@@ -9,5 +11,4 @@ seed for the Full-Stack IOT training project: car-tracker
 ## mock sensor: 
 [http://mocker.egen.io](http://mocker.egen.io)
 
-## requirements:
-[https://learn.egen.io](https://learn.egen.io/courses/overview.html)
+
