@@ -1,0 +1,65 @@
+
+<div>
+    <h1>This page describes all Historical alerts that are being raised by the readings received for a particular VIN</h1>
+
+
+    <label>Select Vin to View Alerts </label>
+    <div class="selectBox"><select ng-model="alertOfVin" ng-options="item.vin for item in allAlertObj" ng-click="selectboxClick()"></select></div>
+    <button ng-click="submitBtn()" class="btn btn-primary">Submit</button>
+    <div>
+        <br>
+    </div>
+    <div id="tbl">
+    <table class="table table-bordered" >
+        <thead>
+        <tr>
+            <th rowspan="2">vin</th>
+            <th rowspan="2">latitude</th>
+            <th rowspan="2">longitude</th>
+            <th rowspan="2">timestamp</th>
+            <th rowspan="2">fuelVolume</th>
+            <th rowspan="2">speed</th>
+            <th rowspan="2">engineHp</th>
+            <th rowspan="2">checkEngineLightOn</th>
+            <th rowspan="2">engineCoolantLow</th>
+            <th rowspan="2">cruiseControlOn</th>
+            <th rowspan="2">engineRpm</th>
+            <th colspan="4">tyres</th>
+            <th rowspan="2">priority</th>
+            <th rowspan="2">description</th>
+
+
+        </tr>
+        <tr>
+            <th>frontLeft</th>
+            <th>frontRight</th>
+            <th>rearLeft</th>
+            <th>rearRight</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat = "x in alertObj track by $index"   >
+            <td>{{x.vin}}</td>
+            <td>{{x.latitude}}</td>
+            <td>{{x.longitude}}</td>
+            <td>{{x.timestamp}}</td>
+            <td>{{x.fuelVolume}}</td>
+            <td>{{x.speed}}</td>
+            <td>{{x.engineHp}}</td>
+            <td>{{x.checkEngineLightOn}}</td>
+            <td>{{x.engineCoolantLow}}</td>
+            <td>{{x.cruiseControlOn}}</td>
+            <td>{{x.engineRpm}}</td>
+            <td>{{x.tires.frontLeft}}</td>
+            <td>{{x.tires.frontRight}}</td>
+            <td>{{x.tires.rearLeft}}</td>
+            <td>{{x.tires.rearRight}}</td>
+            <td>{{x.priority}}</td>
+            <td>{{x.description}}</td>
+            <td>{{x.count}}</td>
+
+        </tr>
+        </tbody>
+    </table>
+</div>
+    </div>
